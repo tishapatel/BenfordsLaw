@@ -110,10 +110,10 @@ public class BenfordsLaw {
     }
 
     /**
-     * Prints out the sales first digit frequency percentages in a numeric representation
-     * @param frequencies is the sales firist digit frequencies
-     * @return void
-     */
+      * Prints out the sales first digit frequency percentages in a numeric representation
+      * @param frequencies is the sales firist digit frequencies
+      * @return void
+      */
     public static void printNumericRepresentation(double[] frequencies) {
         System.out.println("digit,frequency (%)");
         for (int i = 1; i < frequencies.length; i++) {
@@ -122,10 +122,10 @@ public class BenfordsLaw {
     }
 
     /**
-     * Creates a visual representation (bar chart) of the sales first digit frequency precentages
-     * @param frequencies is the sales firist digit frequencies
-     * @return void
-     */
+      * Creates a visual representation (bar chart) of the sales first digit frequency precentages
+      * @param frequencies is the sales firist digit frequencies
+      * @return void
+      */
     public static void createVisualRepresentation(double[] frequencies) {
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
         for (int i = 1; i < frequencies.length; i++) {
@@ -160,9 +160,9 @@ public class BenfordsLaw {
     }
 
     /**
-     * @param frequencies is the sales firist digit frequencies
-     * @return boolean true if fraud likely did not occur or false if it did occur
-     */
+      * @param frequencies is the sales firist digit frequencies
+      * @return boolean true if fraud likely did not occur or false if it did occur
+      */
     public static boolean didNoFraudOccur(double[] frequencies) {
         // Fraud likely did not occur if first digit frequency is between 29 and 32
         double firstDigitFrequency = frequencies[1];
